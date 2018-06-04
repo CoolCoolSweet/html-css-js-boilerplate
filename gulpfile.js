@@ -23,8 +23,8 @@ gulp.task('bs', () => {
 
 
 gulp.task('default', ['bs', 'styles'], () => {
-    gulp.watch('./**/*.scss', ['styles']);
+    gulp.watch('./styles/**/*.scss', ['styles']);
     gulp.watch('./styles/styles.css', reload);
-    gulp.watch('./**/*.html', reload);
-    gulp.watch('./**/*.js', reload);
+    gulp.watch('./*.html', reload);
+    gulp.watch('./scripts/**/*.js', reload);
 });
